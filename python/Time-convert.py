@@ -7,8 +7,8 @@ def timeConvert(num):
             hours = num // 60
         if num // 60  ==  0 :
             minutes = num % 60
-      
-            
+        if num % 60 > 0:
+            minutes = minutes + num % 60
         str = f"{hours} : {minutes}"        
             
         return str
