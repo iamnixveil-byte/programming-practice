@@ -4,3 +4,6 @@ list2 = [2,4,6,8,10,12,14,16,18,20]
 weight = int(input("enter any number"))
 
 guess = [weight * x for x in list1]
+
+
+print(guess)
