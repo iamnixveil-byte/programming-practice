@@ -13,7 +13,13 @@ for i in range(100):
     TotalfinalGuess = sum(FinalGuess)
     AverageGuess = TotalfinalGuess/len(FinalGuess)
     
-    checkGuess = [ i -  j for i,j in zip(list2,guess)]
+    checkGuess = [ a -  b for a,b in zip(list2,guess)]
+    checkGuess = sum(checkGuess) /len(checkGuess)
     weight = weight - (0.01 *checkGuess )
-for count10 in i == 10: 
-    print(count10,weight)
+
+    if i % 10 == 0:
+
+     print(i,AverageGuess)
+     
+print("Final weight:", weight)
+print("Prediction for 11:", weight * 11)
